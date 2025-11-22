@@ -6,20 +6,17 @@
   <body>
     <a-scene>
       <a-assets>
-        <a-asset-item id="skull" src="assets/lowskull.obj"></a-asset-item>
-        <img id="skull1" src="skull_boneskull_AlbedoTransparency.png">
+        <a-asset-item id="skull" src="skull.glb"></a-asset-item>
+        <a-asset-item id="guy" src="guyretopo.glb"></a-asset-item>
       </a-assets>
-      <a-sky src="#sky1"></a-sky>
+      <a-sky color="black"></a-sky>
       
-      <a-text value="Beautiful Family Tree!!" position="0 10 -4" wrap-count="10" width="30" font="roboto" color="#FFFFFF"></a-text>
-      
-      <a-obj-model src="#skull" position="-9.081 0 -10" scale=".25 .25 .25" color="green"></a-obj-model>
-      
-      <a-obj-model src="#skull" position="-5 0 -20" scale=".5 .5 .5" material="shader:flat;src:#skull1"></a-obj-model>
-      <a-box src="" position="-2 0.5 -4"></a-box>
-      <a-sphere src="" radius="0.5" position="0 0.5 -3"></a-sphere>
+      <a-entity gltf-model="#guy" position="0 5.7 -6.7"></a-entity>
+      <a-entity gltf-model="#skull" position="3.503 0 0" rotation="-18 -15 -21"></a-entity>
+      <a-entity gltf-model="#skull" position="-5 0 -5" rotation="-3 -9 15"></a-entity>
 
       <a-light type="ambient" color="#445451"></a-light>
+      <a-light light="color: #ff6000; intensity: 2; type: point"></a-light>
     </a-scene>
   </body>
 </html>
