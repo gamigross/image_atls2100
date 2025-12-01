@@ -7,16 +7,16 @@
     <a-scene>
       <a-assets>
         <a-asset-item id="skull" src="skull.glb"></a-asset-item>
-        <a-asset-item id="guy" src="guyretopo.glb"></a-asset-item>
+        <a-asset-item id="guy" src="guyretopoRIG.glb"></a-asset-item>
       </a-assets>
-      <a-sky color="black"></a-sky>
+      <a-sky src="imageequirect.png"></a-sky>
       
-      <a-entity gltf-model="#guy" position="0 5.7 -6.7"></a-entity>
-      <a-entity gltf-model="#skull" position="3.503 0 0" rotation="-18 -15 -21"></a-entity>
-      <a-entity gltf-model="#skull" position="-5 0 -5" rotation="-3 -9 15"></a-entity>
+      <a-entity gltf-model="#guy" scale="2 2 2" position="0 5.7 -6.7"></a-entity>
+      <a-entity gltf-model="#skull" position="0.5 -3 0" rotation="-18 -15 -21"></a-entity>
+      <a-entity gltf-model="#skull" position="-8 -3 -5" rotation="-3 -9 15"></a-entity>
 
-      <a-light type="ambient" color="#445451"></a-light>
-      <a-light light="color: #ff6000; intensity: 2; type: point"></a-light>
+      <a-light type="ambient" color="#4d00ff"></a-light>
+      <a-light light="color: #e041f7; intensity: 4; type: directional" position="4 10 -1"></a-light>
     </a-scene>
   </body>
 </html>
